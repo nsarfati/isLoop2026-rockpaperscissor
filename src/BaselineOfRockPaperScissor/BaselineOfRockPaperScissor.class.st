@@ -12,9 +12,9 @@ BaselineOfRockPaperScissor >> baseline: spec [
 	"The pharo version it could be: spec for: #'Pharo11' do: ["
 	spec for: #common do: [
 
-		spec preLoadDoIt: [ Transcript open ].
+		spec preLoadDoIt: #preLoad.
 
-		spec postLoadDoIt: [ 'I am loaded :)' traceCr].
+		spec postLoadDoIt: #postLoad.
 
 		spec
 			baseline: 'MathRandomNumbers'
@@ -38,4 +38,14 @@ BaselineOfRockPaperScissor >> baseline: spec [
 			group: 'default'
 			with: #('Tests').
 	]
+]
+
+{ #category : 'baselines' }
+BaselineOfRockPaperScissor >> postLoad [
+	'I am loaded :)' traceCr
+]
+
+{ #category : 'baselines' }
+BaselineOfRockPaperScissor >> preLoad [
+	Transcript open
 ]
