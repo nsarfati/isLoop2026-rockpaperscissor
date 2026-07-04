@@ -19,7 +19,7 @@ BaselineOfRockPaperScissor >> baseline: spec [
 		spec package: 'RockPaperScissor'.
 
 		spec
-			package: 'RockPaperScissor-Test'
+			package: 'RockPaperScissor-Tests'
 			with: [ spec requires: #('RockPaperScissor' 'MathRandomNumbers') ].
 			
 		spec
@@ -28,7 +28,7 @@ BaselineOfRockPaperScissor >> baseline: spec [
 			
 		spec
 			group: 'Tests'
-			with: #('RockPaperScissor-Test').
+			with: #('RockPaperScissor-Tests').
 
 		spec
 			group: 'default'
