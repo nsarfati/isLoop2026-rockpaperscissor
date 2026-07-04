@@ -5,12 +5,12 @@ Class {
 	#package : 'RockPaperScissor'
 }
 
-{ #category : 'as yet unclassified' }
+{ #category : 'play' }
 Rock >> playAgainst: aScissors [ 
 	^self
 ]
 
-{ #category : 'as yet unclassified' }
+{ #category : 'play' }
 Rock >> playAgainstScissors: aHand [
 	^ aHand playAgainstScissors: self
 ]
