@@ -18,6 +18,19 @@ RockPaperScissorTests >> testRockPlayAgainstScissors [
 ]
 
 { #category : 'tests' }
+RockPaperScissorTests >> testScissorsPlayAgainstPaper [
+
+	| scissors paper |
+
+	paper := Paper new.
+	scissors := Scissors new.
+
+	self
+		assert: (scissors playAgainst: paper)
+		equals: scissors
+]
+
+{ #category : 'tests' }
 RockPaperScissorTests >> testScissorsPlayAgainstRock [
 
 	| rock scissors |

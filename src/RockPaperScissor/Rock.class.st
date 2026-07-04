@@ -9,3 +9,8 @@ Class {
 Rock >> playAgainst: aScissors [ 
 	^self
 ]
+
+{ #category : 'as yet unclassified' }
+Rock >> playAgainstScissors: aHand [
+	^ aHand playAgainstScissors: self
+]
