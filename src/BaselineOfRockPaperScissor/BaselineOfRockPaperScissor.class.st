@@ -11,7 +11,11 @@ BaselineOfRockPaperScissor >> baseline: spec [
 
 	"The pharo version it could be: spec for: #'Pharo11' do: ["
 	spec for: #common do: [
-		
+
+		spec preLoadDoIt: [ Transcript open ].
+
+		spec postLoadDoIt: [ 'I am loaded :)' traceCr].
+
 		spec
 			baseline: 'MathRandomNumbers'
 			with: [ spec repository: 'github://PolyMathOrg/random-numbers:v1.x.x/src' ].
